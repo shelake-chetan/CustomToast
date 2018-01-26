@@ -26,10 +26,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mSuccessToast.setOnClickListener(this);
         mErrorToast.setOnClickListener(this);
 
-
+        //Initialise custom toast
         customToast = new CustomToast(this); //pass context as parameter
-        customToast.setTextColor(context.getResources().getColor(R.color.white));
-        customToast.setBackground(context.getResources().getColor(R.color.app_color));
+        customToast.setTextColor(context.getResources().getColor(R.color.white)); //optional
+        customToast.setBackground(context.getResources().getColor(R.color.app_color)); //optional
 
     }
 
