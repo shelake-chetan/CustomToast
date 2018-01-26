@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:background="@color/colorPrimary"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:src="@drawable/icn_success"
+            android:id="@+id/toast_Iv"
+
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="30dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:id="@+id/toast_successTv"
+                android:layout_width="wrap_content"
+                android:textSize="16sp"
+                android:layout_height="wrap_content"
+                android:text="Success"
+                android:layout_gravity="center_vertical" />
+            <TextView
+                android:paddingLeft="10dp"
+                android:textColor="#ffffff"
+                android:textStyle="normal"
+                android:paddingBottom="10dp"
+                android:textSize="14sp"
+                android:id="@+id/toast_Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The image has been uploaded to server."
+                android:layout_gravity="center_vertical" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
