@@ -22,7 +22,7 @@ public class CustomToast {
     private int textColor;
 
     public CustomToast(Context context) {
-        this.backColor = context.getResources().getColor(R.color.colorAccent);
+        this.backColor = context.getResources().getColor(R.color.colorPrimary);
         this.textColor = context.getResources().getColor(R.color.white);
         this.context = context;
     }

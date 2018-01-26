@@ -19,9 +19,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        mNetworkToast = (Button)findViewById(R.id.networkToast);
+        mErrorToast = (Button)findViewById(R.id.errorToast);
+        mSuccessToast = (Button)findViewById(R.id.succToast);
+        mNetworkToast.setOnClickListener(this);
+        mSuccessToast.setOnClickListener(this);
+        mErrorToast.setOnClickListener(this);
+
+
         customToast = new CustomToast(this); //pass context as parameter
-        customToast.setTextColor(context.getResources().getColor(R.color.colorPrimaryDark));
-        customToast.setBackground(context.getResources().getColor(R.color.white));
+        customToast.setTextColor(context.getResources().getColor(R.color.white));
+        customToast.setBackground(context.getResources().getColor(R.color.app_color));
 
     }
 
@@ -36,7 +44,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 customToast.showNetworkToast();
                 break;
             case R.id.succToast:
-                customToast.showSuccessToast("Registered successfully");
+                customToast.showSuccessToast("I have successfully registered my interest");
                 break;
         }
     }
