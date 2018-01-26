@@ -8,10 +8,40 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.customtoast.chen.customtoast.co.customtoast.MainActivity">
+    >
 
-    <TextView
-        android:layout_width="wrap_content"
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+
+    <Button
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="Show success toast"
+        android:textColor="@color/sky_blue"
+        android:textAllCaps="true"
+        android:id="@+id/succToast"
+        android:background="@drawable/border_custom" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show success toast"
+        android:textColor="@color/sky_blue"
+        android:textAllCaps="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/errorToast"
+        android:background="@drawable/border_custom" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Network error toast"
+        android:textColor="@color/sky_blue"
+        android:textAllCaps="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/networkToast"
+        android:background="@drawable/border_custom" />
+</LinearLayout>
 </RelativeLayout>

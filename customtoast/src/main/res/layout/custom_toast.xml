@@ -13,6 +13,7 @@
         android:gravity="center_vertical"
         android:paddingBottom="5dp"
         android:paddingTop="5dp"
+        android:id="@+id/whole_layout"
         android:background="@color/colorPrimary"
         android:layout_height="wrap_content">
 
@@ -38,7 +39,7 @@
                 android:paddingTop="10dp"
                 android:id="@+id/toast_successTv"
                 android:layout_width="wrap_content"
-                android:textSize="16sp"
+                android:textSize="18sp"
                 android:layout_height="wrap_content"
                 android:text="Success"
                 android:layout_gravity="center_vertical" />
@@ -47,7 +48,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="normal"
                 android:paddingBottom="10dp"
-                android:textSize="14sp"
+                android:textSize="16sp"
                 android:id="@+id/toast_Tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
