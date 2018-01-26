@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 customToast.showNetworkToast();
                 break;
             case R.id.succToast:
-                customToast.showSuccessToast("Registered successfully");
+                customToast.showSuccessToast("I have successfully registered my interest");
                 break;
         }
     }
