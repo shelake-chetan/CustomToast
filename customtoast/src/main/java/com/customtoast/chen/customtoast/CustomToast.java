@@ -9,6 +9,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.developer.chen.customtoast.R;
+
 /**
  * Created by chetan on 18-12-2017.
  */
@@ -26,11 +28,11 @@ public class CustomToast {
 
             // Call toast.xml file for toast layout
             View toastRoot = inflater.inflate(R.layout.custom_toast, null);
-            TextView toastText = toastRoot.findViewById(R.id.toast_Tv);
+            TextView toastText = (TextView) toastRoot.findViewById(R.id.toast_Tv);
             toastText.setText(text);
-            ImageView toastImage = toastRoot.findViewById(R.id.toast_Iv);
+            ImageView toastImage =(ImageView) toastRoot.findViewById(R.id.toast_Iv);
             toastImage.setImageResource(R.drawable.icn_error);
-            TextView toastSuccessTv = toastRoot.findViewById(R.id.toast_successTv);
+            TextView toastSuccessTv = (TextView) toastRoot.findViewById(R.id.toast_successTv);
             toastSuccessTv.setText("Error");
             Toast toast = new Toast(context);
 
@@ -51,11 +53,11 @@ public class CustomToast {
 
             // Call toast.xml file for toast layout
             View toastRoot = inflater.inflate(R.layout.custom_toast, null);
-            TextView toastText = toastRoot.findViewById(R.id.toast_Tv);
+            TextView toastText = (TextView) toastRoot.findViewById(R.id.toast_Tv);
             toastText.setText(text);
-            ImageView toastImage = toastRoot.findViewById(R.id.toast_Iv);
+            ImageView toastImage = (ImageView) toastRoot.findViewById(R.id.toast_Iv);
             toastImage.setImageResource(R.drawable.icn_success);
-            TextView toastSuccessTv = toastRoot.findViewById(R.id.toast_successTv);
+            TextView toastSuccessTv = (TextView) toastRoot.findViewById(R.id.toast_successTv);
             toastSuccessTv.setText("Success");
             Toast toast = new Toast(context);
             toast.setView(toastRoot);
@@ -75,11 +77,11 @@ public class CustomToast {
 
             // Call toast.xml file for toast layout
             View toastRoot = inflater.inflate(R.layout.custom_toast, null);
-            TextView toastText = toastRoot.findViewById(R.id.toast_Tv);
+            TextView toastText = (TextView) toastRoot.findViewById(R.id.toast_Tv);
             toastText.setText("No network available");
-            ImageView toastImage = toastRoot.findViewById(R.id.toast_Iv);
+            ImageView toastImage = (ImageView) toastRoot.findViewById(R.id.toast_Iv);
             toastImage.setImageResource(R.drawable.icn_error);
-            TextView toastSuccessTv = toastRoot.findViewById(R.id.toast_successTv);
+            TextView toastSuccessTv = (TextView) toastRoot.findViewById(R.id.toast_successTv);
             toastSuccessTv.setText("Error");
             Toast toast = new Toast(context);
 
