@@ -1,6 +1,6 @@
 # CustomToast
 
-Step 1. Add the JitPack repository to your build file
+# Step 1. Add the JitPack repository to your build file
 
 allprojects {
   repositories {
@@ -9,13 +9,13 @@ allprojects {
   }
  }
 
-Step 2. Add the dependency in build.gradle file
+# Step 2. Add the dependency in build.gradle file
 
 dependencies {
          compile 'com.github.shelake-chetan:CustomToast:1.0.2'
  }
 
-Step 3. Initialise Custom Toast first
+# Step 3. Initialise Custom Toast first
 
         private CustomToast customToast;
         customToast = new CustomToast(this); //pass context as parameter
@@ -24,7 +24,7 @@ Step 3. Initialise Custom Toast first
 
 
 
-Step 4. Show toast as error,success or network error
+# Step 4. Show toast as error,success or network error
 
        customToast.showErrorToast("Some error occurred, please try again");
 
