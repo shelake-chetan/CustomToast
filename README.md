@@ -1,3 +1,7 @@
+https://img.shields.io/badge/Android%20Arsenal-CustomToast-green.svg?style=flat 
+
+https://android-arsenal.com/details/1/6719 
+
 # CustomToast
 
 # Step 1. Add the JitPack repository to your build file
